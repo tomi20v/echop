@@ -15,7 +15,7 @@ I normally include it in php.ini by auto_prepend_file directive, but can be incl
  * @param boolean $returnOnly if true, I only return in a string, otherwise I print
  * @param int $indent what I print will be indented this much
  * @param int $maxDepth print no deeper than this but print *DEPTH LIMIT* instead. 0 means no limit
- * @param boolean $isHtml if true I'll do some HTML formatting (<pre> and <b> tags )
+ * @param boolean $isHtml if true I'll do some HTML formatting (&lt;pre&gt; and &lt;b&gt; tags )
  * @return string|void
  * @see https://github.com/tomi20v/echop
  */
