@@ -1,9 +1,15 @@
-echop
+EchoPrinter / echop
 =====
 
-pretty printer for php, like print_r or var_dump. echop prints more details than print_r but is more compact than var_dump. Also prints constants and static vars for objects.
+Pretty all-purpose printer for PHP. More condensed and informative format 
+than print_r or var_dump. Also prints accessible static properties, and 
+constants. More detailed html format or slim console format, with or 
+without phpdoc inprint
 
-I normally include it in php.ini by auto_prepend_file directive, but can be included anytime, anywhere.
+I normally include it in php.ini by auto_prepend_file directive, but can be 
+included anytime, anywhere.
+
+function echop($var, $returnOnly) is a shorthand for calling EchoPrinter::echop()
 
 /**
  * pretty printer
@@ -19,4 +25,12 @@ I normally include it in php.ini by auto_prepend_file directive, but can be incl
  * @return string|void
  * @see https://github.com/tomi20v/echop
  */
-	     
+
+changelog
+
+1.1 2012-11-11
+echop() moved inside EchoPrinter class to encapsulate it and its utilities
+can look up and print PhpDoc comments on vars
+
+1.0 2012-10-17
+initial version
