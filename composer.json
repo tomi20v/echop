@@ -7,6 +7,6 @@
 "type": "vcs"
 },
 "autoload": {
-"classmap": ["src/"],
+"classmap": ["src/"]
 }
 }
