@@ -1,0 +1,6 @@
+1.2.
+    - added license
+    - fixed: not passing $phpDoc parameter recursively
+    - binding functions are now in separate files
+1.1.
+    ...

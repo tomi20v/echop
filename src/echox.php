@@ -2,7 +2,7 @@
 
 /**
  * short binding for EchoPrinter - include this file or copy the function directly into your bootstrap or like
- * it will print without phpdoc
+ * it will print with all features
  * @see EchoPrinter
  *
  * @author t
@@ -11,10 +11,10 @@
  */
 
 /**
- * I bind echop() to EchoPrinter::echop without phpdoc printing
- * @see EchoPrinter::echop()
+ * I bind echox() to EchoPrinter::echop using all features
+ * @see EchoPrinter::echop
  * @return string|void
  */
-function echop($param, $returnOnly=false, $indent=0, $maxDepth=9, $isHtml=true, $phpDoc=false) {
+function echox($param, $returnOnly=false, $indent=0, $maxDepth=9, $isHtml=true, $phpDoc=true) {
 	return EchoPrinter::echop($param, $returnOnly, $indent, $maxDepth, $isHtml, $phpDoc);
 }
