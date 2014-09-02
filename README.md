@@ -6,8 +6,7 @@ than print_r or var_dump. Also prints accessible static properties, and
 constants. More detailed html format or slim console format, with or 
 without phpdoc inprint
 
-I normally include it in php.ini by auto_prepend_file directive, but can be 
-included anytime, anywhere.
+It is somewhat composer compatible, yet to be added to packagist for code heaven.
 
 function echop($var, $returnOnly) is a shorthand for calling EchoPrinter::echop()
 
