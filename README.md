@@ -43,7 +43,7 @@ simplest printer commands
 >	[**pu**:public] => string(2) **pu**
 >)
 
-changelog
+## changelog
 
 1.3 2014-09-05
 made packagist friendly
