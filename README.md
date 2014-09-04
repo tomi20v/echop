@@ -30,21 +30,19 @@ simplest printer commands
 
 ## an example output with all extras:
 
-```
-MyClass Object (
-	const [**MAP_C**] => 2
-	/** @var string this is the first variable */
-	static [**pus**:public] => string(3) **pus**
-	/** @var string this is the second variable */
-	static [**_prs**:protected] => string(3) **prs**
-	/** @var string this is my protected property */
-	[**_pro**:protected] => string(3) **pro**
-	/** @var string this is another protected property */
-	[**_pro2**:protected] => string(3) **pro2**
-	/** @var string and finally public */
-	[**pu**:public] => string(2) **pu**
-)
-```
+    MyClass Object (
+        const [**MAP_C**] => 2
+        /** @var string this is the first variable */
+        static [**pus**:public] => string(3) **pus**
+        /** @var string this is the second variable */
+        static [**_prs**:protected] => string(3) **prs**
+        /** @var string this is my protected property */
+        [**_pro**:protected] => string(3) **pro**
+        /** @var string this is another protected property */
+        [**_pro2**:protected] => string(3) **pro2**
+        /** @var string and finally public */
+        [**pu**:public] => string(2) **pu**
+    )
 
 ## changelog
 
