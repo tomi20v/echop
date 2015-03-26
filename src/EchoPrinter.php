@@ -6,7 +6,7 @@
  *		constants. More detailed html format or slim console format, with or
  *		without phpdoc inprint
  * @author t
- * @version 1.2 2014-08-18
+ * @version 1.3.2 2015-03-26
  * @license wtfpl
  */
 class EchoPrinter {

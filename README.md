@@ -2,6 +2,7 @@
 =====
 
 ## Pretty all-purpose printer for PHP.
+
 More condensed and informative format than print_r or var_dump. Also prints
 accessible static properties, and constants. More detailed html format or slim
 console format, with or without phpdoc inprint
@@ -9,11 +10,11 @@ console format, with or without phpdoc inprint
 There are some bindings in separate files to include so you can have the
 simplest printer commands
 
-## excerpt from the source:
+## from the source:
 
 ```
 /**
- * pretty printer
+ * the pretty printer
  * 	I will print all kinds of data in a condensed but nice format
  * 	I will print constants and static properties of objects as well
  * 	I will detect cycle references in objects (but not in arrays)
@@ -22,9 +23,9 @@ simplest printer commands
  * @param boolean $returnOnly if true, I only return in a string, otherwise I print
  * @param int $indent what I print will be indented this much
  * @param int $maxDepth print no deeper than this but print *DEPTH LIMIT* instead. 0 means no limit
- * @param boolean $isHtml if true I'll do some HTML formatting (&lt;pre&gt; and &lt;b&gt; tags )
+ * @param boolean $isHtml if true I'll do some HTML formatting (<pre> and <b> tags )
+ * @param boolean $phpDoc if true, it will look for phpdoc tags of all properties etc
  * @return string|void
- * @see https://github.com/tomi20v/echop
  */
 ```
 
@@ -46,6 +47,12 @@ simplest printer commands
 
 ## changelog
 
+1.3.2 2015-03-26
+fix composer.json, some prettify, bump
+
+1.3.1 2014-09-05
+added type library to composer.json
+
 1.3 2014-09-05
 made packagist friendly
 added new binding "echon" which always returns printout
@@ -61,3 +68,12 @@ can look up and print PhpDoc comments on vars
 
 1.0 2012-10-17
 initial version
+
+## why?
+
+my first echop() implementation only wrapped print_r, with optional second
+parameter value of 2, making script to dump and die. I've got addicted as
+I could write the word 'echop' much faster than print_r or var_dump...
+this was 15 years ago. since then it evolved a bit and lately also served
+some experiments like 'put something on composer'
+
